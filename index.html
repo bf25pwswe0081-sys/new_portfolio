@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jalwa Ghafar - Software Engineering Student and Web Developer">
+    <title>Jalwa Ghafar | 3D Portfolio</title>
+
+    <script>
+        document.documentElement.classList.add("intro-pending");
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- DECORATIVE DOODLE BACKGROUND -->
+    <div class="doodle-background" aria-hidden="true"></div>
+    <div class="red-glow"></div>
+
+    <div class="intro-screen" id="introScreen" role="dialog"
+         aria-modal="true" aria-labelledby="introTitle" hidden>
+        <div class="intro-content">
+            <div class="intro-avatar">
+                <img src="assets/images/Cozy%20Hijabi%20Coder%20Workspace.png"
+                     alt="Hijabi coder in a cozy workspace">
+            </div>
+            <p class="intro-kicker intro-line" aria-label="WELCOME TO MY PORTFOLIO">
+                <span class="typed-output" aria-hidden="true"><span class="typed-part">WELCOME TO MY PORTFOLIO</span></span>
+            </p>
+            <h1 id="introTitle" class="intro-line" aria-label="Hi, I'm Jalwa Ghafar.">
+                <span class="typed-output" aria-hidden="true"><span class="typed-part">Hi, I'm </span><span class="typed-part name-highlight">Jalwa Ghafar.</span></span>
+            </h1>
+            <p class="intro-role intro-line" aria-label="I'm a Software Engineering student at the University of Engineering and Technology, Peshawar.">
+                <span class="typed-output" aria-hidden="true"><span class="typed-part">I'm a Software Engineering student at the University of Engineering and Technology, Peshawar.</span></span>
+            </p>
+            <p class="intro-interest intro-line" aria-label="I'm especially interested in artificial intelligence.">
+                <span class="typed-output" aria-hidden="true"><span class="typed-part">I'm especially interested in artificial intelligence.</span></span>
+            </p>
+            <p class="intro-message intro-line" aria-label="Glad you're here.">
+                <span class="typed-output" aria-hidden="true"><span class="typed-part">Glad you're here.</span></span>
+            </p>
+            <button class="intro-skip" id="skipIntro" type="button">
+                Skip intro <span aria-hidden="true">↗</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="navbar site-content">
+        <a href="#home" class="logo">JG<span>.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact" class="nav-button">Contact Me ↗</a>
+        </nav>
+    </header>
+
+    <main class="site-content">
+
+        <!-- HERO SECTION -->
+        <section class="hero section" id="home">
+
+            <div class="hero-content reveal">
+
+                <div class="top-label">
+                    <span class="pulse-dot"></span>
+                    SOFTWARE ENGINEERING STUDENT
+                </div>
+
+                <p class="eyebrow">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+                <h1>
+                    I'm <span class="name-highlight">Jalwa</span><br>
+                    Ghafar<span class="red-dot">.</span>
+                </h1>
+
+                <h2 class="profession">
+                    Software Engineering Student
+                    <span>&</span> Web Developer
+                </h2>
+
+                <p class="hero-description">
+                    I'm a student at the University of Engineering
+                    and Technology, Peshawar. I create modern,
+                    responsive and visually engaging web experiences
+                    using HTML, CSS, JavaScript, React and Node.js.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work ↗
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Connect
+                    </a>
+                </div>
+
+                <div class="hero-social">
+                    <span>FIND ME ON</span>
+                    <a href="https://www.linkedin.com/in/jalwa-ghafar-76a30b3b7/"
+                       target="_blank" rel="noopener noreferrer">
+                        LinkedIn ↗
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- 3D HERO ARTWORK -->
+            <div class="hero-art" id="heroArt">
+
+                <div class="art-circle circle-one"></div>
+                <div class="art-circle circle-two"></div>
+
+                <div class="floating-label label-one">
+                    ✦ CREATIVE MIND
+                </div>
+
+                <div class="floating-label label-two">
+                    &lt;/&gt; WEB DEVELOPER
+                </div>
+
+                <div class="three-d-object">
+                    <div class="orb">
+                        <div class="orb-light"></div>
+                    </div>
+                    <div class="orb-ring"></div>
+                    <div class="orb-ring ring-two"></div>
+                </div>
+
+                <div class="art-caption">
+                    DESIGN <span>•</span> DEVELOP <span>•</span> CREATE
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="section" id="about">
+
+            <div class="section-heading reveal">
+                <span class="section-number">01 / ABOUT ME</span>
+                <h2>Getting to know <span>me.</span></h2>
+            </div>
+
+            <div class="about-grid">
+
+                <div class="about-main glass-card depth-card reveal">
+                    <div class="about-symbol">JG.</div>
+
+                    <h3>A little about myself</h3>
+
+                    <p>
+                        My name is Jalwa Ghafar. I am a Software
+                        Engineering student at the University of
+                        Engineering and Technology, Peshawar.
+                    </p>
+
+                    <p>
+                        I have learned HTML, CSS, JavaScript, React
+                        and Node.js. I enjoy creating attractive,
+                        functional and user-friendly web applications.
+                        I am passionate about technology, creativity
+                        and continuously improving my development skills.
+                    </p>
+                </div>
+
+                <div class="about-details">
+
+                    <div class="detail-card glass-card depth-card reveal">
+                        <span class="detail-icon">🎓</span>
+                        <div>
+                            <small>EDUCATION</small>
+                            <h3>Software Engineering</h3>
+                            <p>University of Engineering and Technology, Peshawar</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card glass-card depth-card reveal">
+                        <span class="detail-icon">💻</span>
+                        <div>
+                            <small>INTEREST</small>
+                            <h3>Full Stack Development</h3>
+                            <p>Frontend and backend web technologies</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-card glass-card depth-card reveal">
+                        <span class="detail-icon">✧</span>
+                        <div>
+                            <small>MY GOAL</small>
+                            <h3>Keep Growing</h3>
+                            <p>Building creative and meaningful digital experiences</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TECHNOLOGY SECTION -->
+        <section class="section" id="skills">
+
+            <div class="section-heading reveal">
+                <span class="section-number">02 / MY TECHNOLOGIES</span>
+                <h2>My technical <span>universe.</span></h2>
+                <p>Technologies I use to create digital experiences.</p>
+            </div>
+
+            <div class="technology-stage">
+
+                <div class="tech-orbit orbit-a"></div>
+                <div class="tech-orbit orbit-b"></div>
+
+                <div class="tech-cube tech-html" data-depth="1">
+                    <div class="cube-face cube-front">
+                        <span class="tech-logo">5</span>
+                        <h3>HTML5</h3>
+                        <small>STRUCTURE</small>
+                    </div>
+                    <div class="cube-face cube-back">HTML</div>
+                    <div class="cube-face cube-right">WEB</div>
+                    <div class="cube-face cube-left">CODE</div>
+                    <div class="cube-face cube-top">01</div>
+                    <div class="cube-face cube-bottom">JG</div>
+                </div>
+
+                <div class="tech-cube tech-css" data-depth="2">
+                    <div class="cube-face cube-front">
+                        <span class="tech-logo">3</span>
+                        <h3>CSS3</h3>
+                        <small>STYLING</small>
+                    </div>
+                    <div class="cube-face cube-back">CSS</div>
+                    <div class="cube-face cube-right">STYLE</div>
+                    <div class="cube-face cube-left">DESIGN</div>
+                    <div class="cube-face cube-top">02</div>
+                    <div class="cube-face cube-bottom">JG</div>
+                </div>
+
+                <div class="tech-cube tech-js" data-depth="3">
+                    <div class="cube-face cube-front">
+                        <span class="tech-logo">JS</span>
+                        <h3>JavaScript</h3>
+                        <small>INTERACTIVITY</small>
+                    </div>
+                    <div class="cube-face cube-back">JS</div>
+                    <div class="cube-face cube-right">LOGIC</div>
+                    <div class="cube-face cube-left">SCRIPT</div>
+                    <div class="cube-face cube-top">03</div>
+                    <div class="cube-face cube-bottom">JG</div>
+                </div>
+
+                <div class="tech-cube tech-react" data-depth="4">
+                    <div class="cube-face cube-front">
+                        <span class="tech-logo react-logo">⚛</span>
+                        <h3>React</h3>
+                        <small>UI DEVELOPMENT</small>
+                    </div>
+                    <div class="cube-face cube-back">REACT</div>
+                    <div class="cube-face cube-right">UI</div>
+                    <div class="cube-face cube-left">COMPONENTS</div>
+                    <div class="cube-face cube-top">04</div>
+                    <div class="cube-face cube-bottom">JG</div>
+                </div>
+
+                <div class="tech-cube tech-node" data-depth="5">
+                    <div class="cube-face cube-front">
+                        <span class="tech-logo node-logo">JS</span>
+                        <h3>Node.js</h3>
+                        <small>BACKEND</small>
+                    </div>
+                    <div class="cube-face cube-back">NODE</div>
+                    <div class="cube-face cube-right">SERVER</div>
+                    <div class="cube-face cube-left">RUNTIME</div>
+                    <div class="cube-face cube-top">05</div>
+                    <div class="cube-face cube-bottom">JG</div>
+                </div>
+
+            </div>
+
+            <p class="tech-instruction">
+                MOVE YOUR MOUSE OVER THE TECHNOLOGY CARDS TO EXPLORE
+            </p>
+
+
+<!-- EXISTING TECHNOLOGIES -->
+<div class="tech-summary reveal">
+    <span>HTML5</span>
+    <span>CSS3</span>
+    <span>JavaScript</span>
+    <span>React</span>
+    <span>Node.js</span>
+</div>
+
+<!-- NEW FLOWING TECHNOLOGY SECTION -->
+<div class="flow-section reveal">
+
+    <p class="flow-heading">ALSO EXPLORING & WORKING WITH</p>
+
+    <div class="flow-container">
+
+        <div class="flow-track">
+
+            <span class="flow-item cpp">C++</span>
+            <span class="flow-item dart">DART</span>
+            <span class="flow-item flutter">FLUTTER</span>
+            <span class="flow-item cpp">C++</span>
+            <span class="flow-item dart">DART</span>
+            <span class="flow-item flutter">FLUTTER</span>
+
+            <!-- DUPLICATE FOR SEAMLESS FLOW -->
+
+            <span class="flow-item cpp">C++</span>
+            <span class="flow-item dart">DART</span>
+            <span class="flow-item flutter">FLUTTER</span>
+            <span class="flow-item cpp">C++</span>
+            <span class="flow-item dart">DART</span>
+            <span class="flow-item flutter">FLUTTER</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="section" id="projects">
+
+            <div class="section-heading reveal">
+                <span class="section-number">03 / MY PROJECTS</span>
+                <h2>Some things I've <span>built.</span></h2>
+                <p>A collection of my web development practice and projects.</p>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card depth-card reveal">
+                    <div class="project-visual visual-one">
+                        <span class="visual-code">&lt;HTML /&gt;</span>
+                        <div class="visual-decoration">✦</div>
+                        <span class="visual-label">01</span>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-category">WEB DESIGN</span>
+                        <h3>Personal Portfolio</h3>
+                        <p>
+                            A personal website showcasing my background,
+                            technical skills and work.
+                        </p>
+                        <div class="tech-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">View Project ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card depth-card reveal">
+                    <div class="project-visual visual-two">
+                        <span class="visual-code">TASK LIST</span>
+                        <div class="visual-decoration">✓</div>
+                        <span class="visual-label">02</span>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-category">JAVASCRIPT APP</span>
+                        <h3>Interactive To-Do List</h3>
+                        <p>
+                            A task manager that lets users add,
+                            complete and delete tasks.
+                        </p>
+                        <div class="tech-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">View Project ↗</a>
+                    </div>
+                </article>
+
+                <article class="project-card depth-card reveal">
+                    <div class="project-visual visual-three">
+                        <span class="visual-code">RESPONSIVE UI</span>
+                        <div class="visual-decoration">◈</div>
+                        <span class="visual-label">03</span>
+                    </div>
+
+                    <div class="project-content">
+                        <span class="project-category">FRONT-END</span>
+                        <h3>Responsive Landing Page</h3>
+                        <p>
+                            A modern landing page with responsive
+                            layouts and interactive elements.
+                        </p>
+                        <div class="tech-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                        <a href="#" class="project-link">View Project ↗</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section" id="contact">
+
+            <div class="contact-panel glass-card depth-card reveal">
+
+                <span class="section-number">04 / CONTACT</span>
+
+                <div class="contact-decoration">✧</div>
+
+                <p class="contact-small">HAVE AN IDEA OR OPPORTUNITY?</p>
+
+                <h2>Let's build something <span>great.</span></h2>
+
+                <p class="contact-description">
+                    I'd love to connect, share ideas and explore
+                    opportunities in web development.
+                </p>
+
+                <div class="contact-actions">
+                    <a href="https://www.linkedin.com/in/jalwa-ghafar-76a30b3b7/"
+                       target="_blank" rel="noopener noreferrer"
+                       class="btn btn-primary">
+                        Connect on LinkedIn ↗
+                    </a>
+
+                    <a href="mailto:YOUR-EMAIL@example.com"
+                       class="btn btn-secondary">
+                        Send Me an Email ↗
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer site-content">
+        <a href="#home" class="logo">JG<span>.</span></a>
+        <p>Designed and developed by Jalwa Ghafar.</p>
+        <a href="#home" class="footer-top">Back to top ↑</a>
+
+        <div class="footer-bottom">
+            © 2026 Jalwa Ghafar. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
