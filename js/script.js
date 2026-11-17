@@ -64,6 +64,12 @@ if (introScreen && skipIntro && siteContent.length) {
         }
     }, { passive: true });
 
+    introScreen.addEventListener("wheel", event => {
+        if (event.deltaY !== 0) {
+            finishIntro();
+        }
+    }, { passive: true });
+
     const typeIntro = async () => {
 
         const lines = [...introScreen.querySelectorAll(".intro-line")].map(line => ({
